@@ -67,12 +67,12 @@ public class AdapterUsers extends RecyclerView.Adapter<AdapterUsers.MyHolder> {
         String userDistrict = userList.get(position).getDistrict();
 
         //set usertype's first letter capital
-        String userTypeCapital;
-        userTypeCapital = userType.substring(0, 1).toUpperCase() + userType.substring(1).toLowerCase();
+       // String userTypeCapital;
+       // userTypeCapital = userType.substring(0, 1).toUpperCase() + userType.substring(1).toLowerCase();
 
         //set data
         myHolder.mNameTv.setText(userName);
-        myHolder.mUsertypeTv.setText(userTypeCapital);
+        myHolder.mUsertypeTv.setText(userType);
         myHolder.mDistrictTv.setText(userDistrict);
         try {
             Picasso.get().load(userImage)

@@ -169,7 +169,7 @@ public class ProfileFragment extends Fragment implements AdapterView.OnItemSelec
                     String image = "" + ds.child("image").getValue();
 
                     //set usertype's first letter capital
-                    userType = userType.substring(0, 1).toUpperCase() + userType.substring(1).toLowerCase();
+                   // userType = userType.substring(0, 1).toUpperCase() + userType.substring(1).toLowerCase();
 
                     //set data
                     nameTv.setText(name);
@@ -270,10 +270,10 @@ public class ProfileFragment extends Fragment implements AdapterView.OnItemSelec
             @Override
             public void onClick(View view) {
 
-                if (userTypeTv.getText().toString().trim().equals("Passenger")){
+                if (userTypeTv.getText().toString().trim().equals("passenger")){
                     showEditProfileDialog();
                 }
-                else if (userTypeTv.getText().toString().trim().equals("Driver")){
+                else if (userTypeTv.getText().toString().trim().equals("driver")){
                     showEditDriverProfileDialog();
                 }
             }

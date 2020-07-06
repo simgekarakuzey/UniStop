@@ -92,11 +92,11 @@ public class RegisterActivity extends AppCompatActivity {
 
                 //atılım email check condition
 
-                else if(!TextUtils.split(email,"@")[1].equals("student.atilim.edu.tr")){
+           /*     else if(!TextUtils.split(email,"@")[1].equals("student.atilim.edu.tr")){
 
-                    Toast.makeText(getApplicationContext(), "Sadece Atılım e-mail geçerlidir.", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "You need to register with Atılım University e-mail", Toast.LENGTH_LONG).show();
                     return;
-                }
+                }   */
 
                 else{
                     //register the user, write it db with registerUser method
@@ -136,8 +136,8 @@ public class RegisterActivity extends AppCompatActivity {
                             String uid = user.getUid();
 
 
-                            //send email authontication
-                            sendEmail();
+                            //send email authonticati
+                            // sendEmail();
 
                             //using hashmap
                             HashMap<Object, String> hashMap = new HashMap<>();
